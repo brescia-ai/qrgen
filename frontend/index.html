@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>qrgen | Free Online QR Code generator</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script type="text/javascript" src="jquery.qrcode.min.js"></script>
+  <script type="text/javascript" src="my-scripts.js"></script>
+  <link rel="stylesheet" href="my-styles.css">
+
+  <!-- For SEO -->
+  <meta name="description" content="Free online QR code generator tool. Create QR codes for URLs, text, and more with our privacy-preserving solution.">
+  <meta name="keywords" content="QR code generator, free QR code, online QR tool, privacy-preserving QR">
+  <meta name="author" content="Brescia AI">
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "qrgen - QR Code Generator",
+      "url": "https://qrgen.brescia.ai",
+      "description": "An ultralight, cross-platform, 100% privacy-preserving QR Code generator.",
+      "applicationCategory": "UtilityApplication",
+      "offers": {
+        "@type": "Offer",
+        "price": "0"
+      },
+      "author": {
+        "@type": "Organization",
+        "name": "Brescia AI",
+        "url": "https://www.brescia.ai"
+      }
+    }
+  </script>
+  <link rel="canonical" href="https://qrgen.brescia.ai">
+  <meta name="robots" content="index, follow">
+  <meta http-equiv="Cache-Control" content="public, max-age=86400">
+  <!-- Open Graph Tags -->
+  <meta property="og:title" content="QR Code Generator | Free Online Tool">
+  <meta property="og:description" content="Generate QR codes instantly with our free, privacy-preserving tool.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://qrgen.brescia.ai">
+  <!-- Twitter Card Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="QR Code Generator | Free Online Tool">
+  <meta name="twitter:description" content="Generate QR codes instantly with our free, privacy-preserving tool.">
+
+</head>
+
+<body>
+  <div class="app-container">
+    <div class="header">
+      <h1>qrgen</h1>
+      <p>An ultralight, cross-platform, 100% privacy-preserving <b>QR Code<sup>®</sup> generator</b>.</p>
+    </div>
+
+    <div class="content-wrapper">
+      <div class="input-section">
+        <div class="form-group">
+          <label for="text-input">Data Source</label>
+          <input type="text" id="text-input" class="form-control" placeholder="https://example.com">
+        </div>
+
+        <div class="form-group">
+          <div class="button-group">
+            <button id="generate-btn" class="btn btn-primary">Generate QR Code</button>
+            <button id="download-btn" class="btn btn-secondary">Export as PNG</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="preview-section">
+        <div class="preview-label">QR Code Preview</div>
+        <div class="qrcode-container">
+          <div id="qrcode" aria-label="Generated QR Code" role="img"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <p>Built by <a target="_blank" href="https://www.brescia.ai">Brescia AI</a>.</p>
+    </div>
+  </div>
+
+</body>
+
+</html>
